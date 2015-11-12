@@ -1,0 +1,125 @@
+div.nav-container{
+	width: 100%;
+	max-width: 100%;
+	padding: 0px 40px;
+	background-color: black;
+}
+
+img{
+	width: 100%;
+}
+
+div.logo img{
+    width: 220px;
+    margin-top: 5px;
+}
+
+nav ul{
+	float:right;
+	margin-bottom: 0px;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 15px;
+	margin-bottom: 0px;
+	background-color: transparent;
+	transition: .5s all;
+}
+
+nav ul li a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	color: white;
+}
+
+nav ul li:hover{
+	background-color: #DA372A;
+}
+
+li.search img{
+	height: 23px;
+}
+li.active{
+	background-color: #DA372A;
+}
+
+.bxslider img{
+	width: 100%;
+}
+
+.slider{
+	border-bottom: 1px solid #BDBCBC;
+	padding-bottom: 8px;
+}
+
+div.deals{
+	margin-top: 50px;
+	text-align: right;
+}
+
+div.deals .right-c{
+	padding-right: 4%;
+}
+
+div.deals .left-c{
+	padding-left: 4%;
+}
+
+div.deals .row{
+	margin-top: 50px;
+}
+
+div.deal{
+	padding: 10px;
+	box-shadow: 6px 7px 0px #D8D8D8;
+	background-color: #D23C3F;
+}
+
+div.deal:hover{
+}
+
+div.deal img{
+	max-height: 156px;
+}
+
+div.deal span{
+	font-weight: bold;
+	color: white;
+}
+
+footer{
+	background: url('http://api.thumbr.it/whitenoise-361x370.png?background=000000ff&noise=626262&density=18&opacity=26');
+	margin-top: 80px;
+}
+
+footer.four{
+	padding: 30px;
+}
+
+section{
+	padding: 45px 0px;
+	padding-left: 50%
+}
+section ul li{
+	color: white;
+	display: block;
+	margin-bottom: 0px;
+}
+section ul li.heading{
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+@media (max-width: 550px) {
+	div.logo{
+		text-align: center;
+	}
+	li.active{
+		background-color: transparent;
+	}
+}
