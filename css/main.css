@@ -239,3 +239,25 @@ span.socials{
 		margin: 0; 
 	}
 }
+
+.locations h3{
+    display: block;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.desserts img{
+    width: 20%;
+    float: left;
+}
+
+.description{
+    font-size: 0.7em;
+    color: #000000!important;
+}
+
+div.deal:hover{
+	transform: scale(1.1,1.1);
+	transition: ease 0.5s;	
+	cursor: pointer;
+}
