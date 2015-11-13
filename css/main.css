@@ -223,6 +223,9 @@ span.socials{
 	li.search{
 		height: 25px;
 	}
+	div.deals div.row{
+		margin-top: 0px;
+	}
 	nav ul{
 		float: none;
 		text-align: center;
@@ -251,13 +254,19 @@ span.socials{
     float: left;
 }
 
+.dessert-title{
+	background-color: white;
+    color: #D23C3F !important;
+    padding: 5px;
+}
 .description{
     font-size: 0.7em;
-    color: #000000!important;
 }
-
+div.deal{
+	transition: ease 0.5s;	
+}
 div.deal:hover{
-	transform: scale(1.1,1.1);
+	transform: scale(1.02,1.02);
 	transition: ease 0.5s;	
 	cursor: pointer;
 }
