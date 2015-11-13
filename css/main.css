@@ -1,8 +1,12 @@
+body{
+	background-color: #F7F5F5;
+}
 div.nav-container{
 	width: 100%;
 	max-width: 100%;
 	padding: 0px 40px;
 	background-color: black;
+	border-bottom: 3px solid #DA372A;
 }
 
 img{
@@ -17,6 +21,7 @@ div.logo img{
 nav ul{
 	float:right;
 	margin-bottom: 0px;
+    margin-right: 10px;
 }
 
 nav ul li{
@@ -25,6 +30,7 @@ nav ul li{
 	margin-bottom: 0px;
 	background-color: transparent;
 	transition: .5s all;
+	margin: 0px;
 }
 
 nav ul li a{
@@ -41,8 +47,24 @@ nav ul li:hover{
 	background-color: #DA372A;
 }
 
-li.search img{
-	height: 23px;
+li.search{
+	background-image: url('../images/search.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 14px 15px;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    padding: 15px;
+    height: 54px;
+    width: 20px;
+}
+li.search a{
+	position: absolute;
+    width: 50px;
+    height: 52px;
+    left: 0;
+    top: 0;
 }
 li.active{
 	background-color: #DA372A;
@@ -55,6 +77,7 @@ li.active{
 .slider{
 	border-bottom: 1px solid #BDBCBC;
 	padding-bottom: 8px;
+	background-color: white;
 }
 
 div.deals{
@@ -62,8 +85,12 @@ div.deals{
 	text-align: right;
 }
 
+div.deals a{
+	text-decoration: none;
+}
+
 div.deals .right-c{
-	padding-right: 4%;
+	padding-right: 4%; 
 }
 
 div.deals .left-c{
@@ -78,6 +105,7 @@ div.deal{
 	padding: 10px;
 	box-shadow: 6px 7px 0px #D8D8D8;
 	background-color: #D23C3F;
+	overflow: hidden;
 }
 
 div.deal:hover{
@@ -85,41 +113,102 @@ div.deal:hover{
 
 div.deal img{
 	max-height: 156px;
+	transition: 1s all;
+	/* max-width: 400px; */
 }
-
 div.deal span{
 	font-weight: bold;
 	color: white;
 }
 
 footer{
-	background: url('http://api.thumbr.it/whitenoise-361x370.png?background=000000ff&noise=626262&density=18&opacity=26');
+	background: url('http://api.thumbr.it/whitenoise-361x370.png?background=212121ff&noise=626262&density=33&opacity=64');
 	margin-top: 80px;
+}
+
+footer .footer-bottom{
+	background: url('http://api.thumbr.it/whitenoise-361x370.png?background=000000ff&noise=626262&density=18&opacity=26');
+	height: 100%;
+	padding: 10px;
 }
 
 footer.four{
 	padding: 30px;
 }
 
+footer p{
+	margin-bottom: 0px;
+	color: #4A4B4B;
+	text-align: center;
+	font-size: 13px;
+}
+
 section{
-	padding: 45px 0px;
-	padding-left: 50%
+	margin: 45px 0px;
 }
 section ul li{
-	color: white;
+	color: #E2E1E1;
 	display: block;
 	margin-bottom: 0px;
 }
 section ul li.heading{
 	font-weight: bold;
-	margin-bottom: 10px;
-	font-size: 18px;
+    margin-bottom: 16px;
+    width: 134px;
+    font-size: 18px;
+    color: white;
+    background-color: #E2E1E1;
+    color: #5F5353;
+    text-align: center;
 }
+section ul li a{
+	text-decoration: none;
+	color: #D2CDCD;
+	transition: .5s all;
+}
+section ul li a:hover{
+	color: white;
+}
+section.left{
+	padding-left: 50%;
+}
+
+section.middle{
+	padding-left: 20%;
+}
+
+section.middle ul,section.right ul{
+	border-left: 1px solid #9E9E9E; 
+	padding-left: 40px;
+}
+
+section.right{
+	padding-left: 0%;
+}
+
 @media (max-width: 550px) {
 	div.logo{
 		text-align: center;
 	}
 	li.active{
 		background-color: transparent;
+	}
+	li.search{
+		height: 25px;
+	}
+	nav ul{
+		float: none;
+		text-align: center;
+	}
+	.left-c, .right-c{
+		padding: 30px !important;
+	}
+	section.middle ul, section.right ul{
+		border: none;
+		padding-left: 0px;
+	}
+	section.left, section.middle, section.right{
+		padding: 30px !important;
+		margin: 0; 
 	}
 }
