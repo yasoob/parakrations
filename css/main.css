@@ -388,3 +388,13 @@ ul.sub-sub-menu a{
 .loc_content span{
 	color: #D23C3F;
 }
+.form-container{
+	position: relative;
+	width: 100%;
+	max-width: 660px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+form{
+	margin-bottom: 0px;
+}
