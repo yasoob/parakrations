@@ -261,6 +261,11 @@ span.socials{
 }
 .description{
     font-size: 0.7em;
+    font-size: 13px;
+    /* line-height: .2em; */
+    /* display: inline-block; */
+    margin-top: 18px;
+    display: inherit;
 }
 div.deal{
 	transition: ease 0.5s;	
