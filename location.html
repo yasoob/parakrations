@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Pizza Hut</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container nav-container">
+    <div class="row nav">
+        <div class="two columns">
+            <div class="logo">
+                <a href="/">
+                    <img src="images/logo_pizzahut.png">
+                </a>
+            </div>
+        </div>
+        <div class="ten columns">
+            <nav>
+                <ul>
+                    <li><a href="#">Menu</a></li>
+                    <li class="active"><a href="/location.html">Location</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="six columns left-c">
+
+        <div class="row">
+            <div class="locations">
+                <h3>Locations</h3>
+
+            </div>
+        </div>
+
+        <div class="deals">
+    <div class="row">
+        <div class="six columns left-c">
+            <div class="deal" onclick="replace_frame('Lahore')">
+                <a href="">
+                <span>Lahore</span>
+                    </a>
+            </div>
+        </div>
+        <div class="six columns right-c">
+            <div class="deal" onclick="replace_frame('Islamabad')">
+                <span>Islamabad</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="six columns left-c">
+            <div class="deal" onclick="replace_frame('Karachi')">
+                <span>Karachi</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    </div>
+        <div class="six columns right-c-c">
+            <iframe style="width: 100%" class="frame" src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d108846.7155166462!2d74.27917517767153!3d31.511527448514773!3m2!1i1024!2i768!4f13.1!2m1!1sPizza+Hut+Lahore!5e0!3m2!1sen!2sus!4v1447436830829" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+
+
+<footer>
+    <div class="row">
+      <div class="four columns">
+        <section>
+          <ul>
+            <li class="heading">Menu</li>
+            <li><a href="/deals.html">Deals</a></li>
+            <li><a href="/pizzas.html">Pizzas</a></li>
+            <li><a href="/starters.html">Starters</a> </li>
+            <li><a href="/desserts.html">Desserts</a> </li>
+          </ul>
+        </section>
+      </div>
+      <div class="four columns">
+        <section>
+          <ul>
+            <li class="heading">Support</li>
+            <li>Contact Us</li>
+            <li><a href="/location.html">Locations</a></li>
+
+          </ul>
+        </section>
+      </div>
+      <div class="four columns">
+        <section>
+          <ul>
+            <li class="heading">Follow Us</li>
+            <li><span class="socials"><i class="fa fa-facebook-official"></i></span><a href="https://www.facebook.com/PizzaHutPak/?fref=ts">Facebook</a></li>
+            <li><span class="socials"><i class="fa fa-twitter"></i></span><a href="https://twitter.com/pizzahutpak">Twitter</a></li>
+            <li><span class="socials"><i class="fa fa-instagram"></i></span><a href="">Instagram</a></li>
+
+          </ul>
+        </section>
+      </div>
+    </div>
+
+
+
+</footer>
+
+<script type="text/javascript" src="js/main.js"></script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.bxslider').bxSlider({
+            auto: true
+        });
+    });
+</script>
+</body>
+</html>
