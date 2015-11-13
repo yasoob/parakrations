@@ -29,11 +29,12 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
 
 </head>
 <body>
@@ -42,24 +43,37 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container nav-container">
     <div class="row nav">
-        <div class="two columns">
-            <div class="logo">
-                <a href="/">
-                    <img src="images/logo_pizzahut.png">
-                </a>
-            </div>
+      <div class="two columns">
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo_pizzahut.png">
+          </a>
         </div>
-        <div class="ten columns">
-            <nav>
-                <ul>
-                    <li><a href="#">Menu</a></li>
-                    <li class="active"><a href="/location.html">Location</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+      </div>
+      <div class="ten columns">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Menu</a>
+              <ul class="sub-menu">
+                <div class="arrow"></div>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="pizzas.html">Pizzas</a></li>
+                <li><a href="starters.html">Starters</a> </li>
+                <li><a href="desserts.html">Desserts</a> </li>
+              </ul>
+            </li>
+            <li class="active"><a href="/location.html">Location</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="search" onclick="toggle_visibility('search');"><a href="#"></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-</div>
+  </div>
+  <div class="search-bar" id="search"> 
+    <input placeholder="Search.."/>
+  </div>
 
 <div class="deals">
     <div class="row">
@@ -67,14 +81,14 @@
             <div class="deal">
                 <a href="#supreme">
                 <img src="images/pizza_supreme.jpg">
-                <span>Supreme</span>
+                <span class="dessert-title">Supreme</span>
                     </a>
             </div>
         </div>
         <div class="six columns right-c">
             <div class="deal">
                 <img src="images/pizza_local_delights.jpg">
-                <span>Local Delights</span>
+                <span class="dessert-title">Local Delights</span>
             </div>
         </div>
     </div>
@@ -82,13 +96,13 @@
         <div class="six columns left-c">
             <div class="deal">
                 <img src="images/pizza_classic_pizza.jpg">
-                <span>Classic Pizzas</span>
+                <span class="dessert-title">Classic Pizzas</span>
             </div>
         </div>
         <div class="six columns right-c">
             <div class="deal">
                 <img src="images/pizza_chicken_feast.jpg">
-                <span>Chicken Feast</span>
+                <span class="dessert-title">Chicken Feast</span>
             </div>
         </div>
     </div>
@@ -125,7 +139,7 @@
             <li class="heading">Follow Us</li>
             <li><span class="socials"><i class="fa fa-facebook-official"></i></span><a href="https://www.facebook.com/PizzaHutPak/?fref=ts">Facebook</a></li>
             <li><span class="socials"><i class="fa fa-twitter"></i></span><a href="https://twitter.com/pizzahutpak">Twitter</a></li>
-            <li><span class="socials"><i class="fa fa-instagram"></i></span><a href="">Instagram</a></li>
+            <li><span class="socials"><i class="fa fa-instagram"></i></span><a href="https://instagram.com/pizzahut/">Instagram</a></li>
 
           </ul>
         </section>
@@ -133,7 +147,7 @@
     </div>
     <div class="row">
       <div class="footer-bottom">
-        <p>© 2015 Pizza Hut, Pakistan Inc. All rights reserved. Powered by Yasoob Khalid, Aitchison.</p>
+        <p>© 2015 Pizza Hut, Pakistan Inc. All rights reserved. Powered by Yasoob Khalid, Aitchison. (Wattoo McDonalds Kha raha tha)</p>
       </div>
     </div>
   </footer>
