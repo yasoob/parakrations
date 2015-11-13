@@ -398,3 +398,11 @@ ul.sub-sub-menu a{
 form{
 	margin-bottom: 0px;
 }
+.footer-bottom a{
+    color: #717D84;
+    transition: all .5s;
+}
+
+.footer-bottom a:hover{
+	color:silver;
+}
